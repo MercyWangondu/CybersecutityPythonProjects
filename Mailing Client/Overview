@@ -33,8 +33,8 @@ The server.quit() method terminates the connection to the SMTP server.
 Example Workflow
 Inputs:
 
-A Gmail account (jnjiwa83@gmail.com) and its password (or app password).
-Recipient's email address (wangondumercy443@gmail.com).
+A Gmail account (sender@gmail.com) and its password (or app password).
+Recipient's email address (sendee@gmail.com).
 A message file (message.txt) and an attachment (Bags.jpeg).
 Execution:
 

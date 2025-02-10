@@ -18,11 +18,11 @@ server.starttls()
 with open('password.txt','r') as f:
     password=f.read().strip()
 
-server.login('jnjiwa83@gmail.com' ,password)
+server.login('user@email.com' ,password)
 
 msg= MIMEMultipart()
-msg['From']='MercyM'
-msg['To']='wangondumercy443@gmail.com'
+msg['From']='LizM'
+msg['To']='sendee@email.com'
 msg['Subject']='Just a test mail'
 
 with open('message.txt','r') as f:
@@ -42,7 +42,7 @@ msg.attach(p)
 
 # Send the email
 text=msg.as_string()
-server.sendmail('jnjiwa83@gmail.com','wangondumercy443@gmail.com',text)
+server.sendmail('sender@email.com','sendee@email.com',text)
 
 # Close the server connection
 server.quit()
